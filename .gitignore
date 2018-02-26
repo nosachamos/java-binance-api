@@ -16,3 +16,6 @@ gradle.properties
 !gradle-wrapper.jar
 
 testdb.tmp/
+
+.project
+workspace
