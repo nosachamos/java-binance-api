@@ -203,6 +203,7 @@ public class BinanceRequest {
 
         try {
             conn = (HttpsURLConnection)url.openConnection();
+            conn.setConnectTimeout(120000);
         } catch (IOException e) {
             throw new BinanceApiException("HTTPS Connection error " + e.getMessage());
         }
